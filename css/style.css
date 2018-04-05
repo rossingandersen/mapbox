@@ -1,0 +1,26 @@
+.film {
+        margin: 2%;
+        text-align: left;
+        -webkit-columns: 50px 3; /*Chrome, Safari, Opera */
+        -moz-columns: 50px 3; /* Firefox */
+    columns: 50px 3;
+}
+
+h2 {
+    margin: 1%;
+    margin-left: 2%;
+}
+
+    .life {
+        text-align: left;
+    }
+* {
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Nunito', sans-serif;
+    background-color: #f7f5f3;
+    }
+
+#map {
+    margin-top: -2%;
+    
+}

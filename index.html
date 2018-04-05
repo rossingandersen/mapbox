@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Raleway" rel="stylesheet">
+    <link href='mapbox://styles/linerandersen/cjfjd2z4qfdy22ro9q60c7j8r' rel='stylesheet' />
+
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+    
+</head>
+<body>
+   
+<section>
+
+    <!-- the map will be loaded to #map -->
+    <div id='map'></div>
+    <h2></h2>
+    <p>
+        <a href="mapbox://styles/linerandersen/cjfjd2z4qfdy22ro9q60c7j8r"></a>
+    </p>
+
+</section>
+
+<!-- mapbox -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+
+<!-- the map settings -->
+<script>
+    
+    mapboxgl.accessToken = 'pk.eyJ1IjoibGluZXJhbmRlcnNlbiIsImEiOiJjamZqZDJobnI1YTFpMzJwbjc5d2prM3ZiIn0.UMoVgKdvRzzw0eaDKlMEfQ';
+    var map = new mapboxgl.Map({
+        container: 'map', // the container id
+        style: 'mapbox://styles/linerandersen/cjfjd2z4qfdy22ro9q60c7j8r', // your style
+        center: [9.647705, 55.794083], // Øster Snede 
+        zoom: 15, // zoom
+        pitch: 5, // skew
+        bearing: 0 // rotation
+    });
+    
+    
+</script>
+    
+    <br>
+<h2 class="life">The Secret Life of Walter Mitty</h2>
+    <p class="film">Filmen "The Secret Life of Walter Mittty" handler om at opleve verden. Man følger en stille og rolig mand, der aldrig rigtig har begivet sig ud i den store verden. Han er ansvarlig for filmnegativer på bladet LIFE i New York. Her har han mødt sin kollega Cheryl, som han har et godt øje til. Han bliver tvunget ud i verden, da han får en opgave fra en verdenskendt fotograf. Han skal lede efter filmnegativet nr. 25. Hans søgen tager ham til både Grønland og Island. Her gør han ting han aldrig selv før har gjort. Filmen minder meget om min barndom og ungdom. Da jeg var yngre var jeg meget stille, og var ikke glad for at bevæge mig ud i verdenen. Men da jeg mødte min første kæreste, ændrede alt sig. Jeg fik en stor eventyrlyst, lysten til at opdage og lysten til at skubbe grænser. Ligesom Walter Mitty gør. Derfor åbner kortet på min hjemby, Øster Snede. Her er jeg vokset op med et lille samfund på knap 1.000 indbyggere. Her var det trygge rammer, at vokse op i, men det var samtidig for små rammer til at udvikle sig til en ung voksen i. Der mødte jeg ikke megen modstand, og verden synes så stor uden for byens grænser. Så jeg tog på eventyr og begyndte at udvikle mig. Ligesom Walter Mitty. Havde det ikke været for mine eventyr, så havde jeg ikke stået her i dag. Historien bag dette kort er, at det er vigtigt at vide, hvor man kommer fra, men det er mindst lige så vigtigt at komme videre og opleve verden på egen hånd.  </p>
+</body>
+</html>
